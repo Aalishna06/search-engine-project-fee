@@ -1,0 +1,101 @@
+/* styles.css */
+body {
+    background: linear-gradient(to right, #ff758c, #ff7eb3);
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border: none;
+    padding: 20px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.card-title {
+    color: #ff758c;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#question {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-in-out;
+    color: #333;
+}
+
+.option {
+    background-color: #ff7eb3;
+    color: white;
+    border: none;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.option:hover {
+    background-color: #ff758c;
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+#submit-button {
+    background-color: #ff758c;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+#submit-button:hover {
+    background-color: #ff7eb3;
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+#feedback {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-top: 20px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+#score {
+    font-size: 1rem;
+    margin-top: 10px;
+    color: #555;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
